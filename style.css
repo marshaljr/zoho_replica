@@ -941,9 +941,22 @@ blockquote {
 }
 
 .socials {
-    color: #157bc5;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
     margin-bottom: 15px;
+}
+.socials a {
+    display: grid;
+    place-items: center;
+    color: #157bc5;
+    font-size: 16px;
+    transition: color 0.2s, transform 0.2s;
+}
+.socials a:hover {
+    color: #0867b6;
+    transform: translateY(-2px);
 }
 
 .footer-bottom p {
